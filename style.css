@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #079b0c;
+    color: white;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
+.logo img {
+    max-height: 50px;
+    width: auto;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Расстояние между кнопками */
+}
+
+.menu-item {
+    background-color: white; /* Белый фон кнопок */
+    color: #079b0c; /* Зелёный текст */
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px; /* Закруглённые края кнопок */
+    font-size: 14px;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s; /* Плавный эффект движения и тени */
+}
+
+.menu-item:hover {
+    transform: translateY(-5px); /* Кнопка поднимается вверх */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Тень под кнопкой */
+}
+
+.content-section {
+    background-image: url('glavnaya.jpg');
+    background-size: 100%; /* Масштабировать, чтобы покрыть весь блок */
+    background-repeat: no-repeat; /* Не повторять изображение */
+    padding: 50px; /* Отступы для контента */
+    width: 100%;
+    height: 800px; /* Задаём фиксированную высоту для секции */
+    color: white; /* Цвет текста */
+    display: flex;
+}
+
+.content-wrapper {
+    background-color: rgba(255, 255, 255, 0.199);
+    box-shadow: 0 0 5px black;
+    border-radius: 10px;
+    display:block;
+    margin-left: 100px;
+    max-width: 330px;
+    max-height: 250px;
+}
+
+.content-wrapper h1 {
+    font-family: "Zen Antique", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.content-wrapper h2 {
+    font-family: "Zen Antique", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 26px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.content-wrapper p {
+    text-align: justify;
+    font-family: "Zen Antique", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.button-group {
+    display: flex;
+    gap: 35px;
+    justify-content: left;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.action-button {
+    background-color: #079b0c; /* Зелёный цвет кнопки */
+    color: white; /* Белый текст */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px; /* Закруглённые края */
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s; /* Эффект при наведении */
+}
+
+.action-button:hover {
+    transform: translateY(-5px); /* Подъём кнопки */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Тень */
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: auto; /* Прижать футер к низу */
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .menu-item {
+        flex: 1;
+        text-align: center;
+    }
+
+    .logo img {
+        max-height: 40px;
+    }
+
+    .content-section {
+        height: 300px; /* Уменьшенная высота для мобильных устройств */
+        padding: 20px; /* Уменьшенные отступы */
+    }
+
+    .content-wrapper h1 {
+        font-size: 24px;
+    }
+
+    .content-wrapper p {
+        font-size: 14px;
+    }
+
+    .action-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

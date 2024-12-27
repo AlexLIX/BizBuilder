@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О Приложении - BizBuilder</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #079b0c;
+            color: white;
+            width: 100%;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav.menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu-item {
+            color: 079b0c;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        h1, h2 {
+            color: #079b0c;
+            text-align: center;
+        }
+
+        p, ul {
+            line-height: 1.6;
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #079b0c;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="BizBuilder_glavnaya_1.png" alt="Логотип">
+            </div>
+            <nav class="menu">
+                <a href="index.html" class="menu-item">Главная</a>
+                <a href="details.html" class="menu-item">О нас</a>
+                <a href="login.php" class="menu-item">Личный кабинет</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>О приложении BizBuilder</h1>
+        <section>
+            <h2>Краткая информация о проекте</h2>
+            <p><strong>Название:</strong> BizBuilder: Платформа аналитики для успешного бизнеса.</p>
+            <p><strong>Тема:</strong> Платформа для анализа открытых данных, направленная на поддержку малого бизнеса.</p>
+            <p><strong>Технологическое направление:</strong> Технологии информационных, управляющих систем и искусственного интеллекта.</p>
+            <p><strong>Рынки:</strong> Нейронет, Технет.</p>
+            <p><strong>Ключевые технологии:</strong> Искусственный интеллект, машинное обучение, большие данные.</p>
+        </section>
+
+        <section>
+            <h2>Основные возможности приложения</h2>
+            <ul>
+                <li>Анализ открытых данных для выявления рыночных тенденций.</li>
+                <li>Рекомендации для выбора оптимальной бизнес-стратегии.</li>
+                <li>Поддержка малого бизнеса с помощью прогнозных моделей.</li>
+                <li>Интерактивные визуализации для упрощения принятия решений.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 BizBuilder. Все права защищены.</p>
+    </footer>
+</body>
+</html>
